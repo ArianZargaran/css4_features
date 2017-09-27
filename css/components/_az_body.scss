@@ -1,0 +1,8 @@
+//border
+body {
+  background: var(--siteBackground);
+  border: 15px solid #fff;
+  @include MQ(S){
+    border: 20px solid #fff;
+  }
+}

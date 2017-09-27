@@ -1,0 +1,23 @@
+:root {
+  --siteBackground: #F5F5F5; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: var(--siteBackground);
+  border: 15px solid #fff; }
+  @media only screen and (min-width: 542.01px) {
+    body {
+      border: 20px solid #fff; } }
+
+.az_main-navbar {
+  display: grid;
+  width: 370px;
+  margin: 0 auto;
+  grid-template-columns: 50px 50px 50px 70px 50px 50px 50px;
+  grid-template-rows: 50px;
+  justify-items: center;
+  align-items: end; }
+
+/*# sourceMappingURL=main.css.map */
