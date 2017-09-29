@@ -1,9 +1,33 @@
 :root {
   --siteBackground: #F5F5F5; }
 
+@font-face {
+  font-family: NeuzeitGroT_Bold;
+  src: url(typos/NeuzeitGroT_Bold.ttf); }
+@font-face {
+  font-family: sourceSansPro;
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLight.otf); }
+@font-face {
+  font-family: sourceSansPro_Italic;
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf); }
+@font-face {
+  font-family: sourceSansPro_Italic;
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf); }
+@font-face {
+  font-family: sourceSansPro_Regular;
+  src: url(typos/source-sans-pro/SourceSansPro-Regular.otf); }
+:root {
+  --typoParagraph: sourceSansPro;
+  --typoHeading: NeuzeitGroT_Bold; }
+
+html {
+  font-family: var(--typoParagraph);
+  font-size: 16px; }
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  text-decoration: none; }
 
 body {
   background: var(--siteBackground);
@@ -11,16 +35,6 @@ body {
   @media only screen and (min-width: 542.01px) {
     body {
       border: 20px solid #fff; } }
-
-.az_main-navbar {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px;
-  justify-items: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end; }
 
 .az_main-navbar_works {
   grid-column: 3;
@@ -52,7 +66,7 @@ body {
   @media only screen and (min-width: 899.01px) {
     .az_main-navbar_avatar {
       grid-column: 4;
-      grid-row: span 2; } }
+      grid-row: span 3; } }
 
 .az_main-navbar_education {
   grid-column: 3;
@@ -62,11 +76,11 @@ body {
       grid-column: 5;
       grid-row: 2; } }
 
-.az_main-navbar_feedback {
+.az_main-navbar_reviews {
   grid-column: 4;
   grid-row: 3; }
   @media only screen and (min-width: 899.01px) {
-    .az_main-navbar_feedback {
+    .az_main-navbar_reviews {
       grid-column: 6;
       grid-row: 2; } }
 
@@ -77,5 +91,82 @@ body {
     .az_main-navbar_contact {
       grid-column: 7;
       grid-row: 2; } }
+
+.az_main-navbar {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 50px 50px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end; }
+  .az_main-navbar span, .az_main-navbar h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.az_main-navbar_item {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6b6b6b;
+  line-height: 26px;
+  letter-spacing: 1px; }
+
+.az_main-navbar_item-right {
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .az_main-navbar_item-right a {
+    height: 100%;
+    width: 100%; }
+    .az_main-navbar_item-right a:hover {
+      color: #16a6b6;
+      border-bottom: .5px solid #16a6b6; }
+  @media only screen and (min-width: 899.01px) {
+    .az_main-navbar_item-right {
+      -ms-flex-item-align: end;
+          align-self: end;
+      justify-self: end;
+      text-align: rigth;
+      border-bottom: .5px solid #6b6b6b;
+      line-height: 40px;
+      padding: 0 10% 0 30%; } }
+
+@media only screen and (min-width: 899.01px) {
+  .az_main-navbar_item-left {
+    -ms-flex-item-align: end;
+        align-self: end;
+    justify-self: end;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+    line-height: 40px;
+    padding: 0 30% 0 10%; }
+    .az_main-navbar_item-left a {
+      height: 100%;
+      width: 100%; }
+      .az_main-navbar_item-left a:hover {
+        color: #16a6b6;
+        border-bottom: .5px solid #16a6b6; } }
+
+.az_main-navbar_avatar {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background: #fff;
+  border-radius: 100%;
+  text-indent: -9999px;
+  border-bottom: .5px solid #6b6b6b; }
+  .az_main-navbar_avatar a {
+    height: 100%;
+    width: 100%; }
+    .az_main-navbar_avatar a:hover {
+      border-bottom: .5px solid transparent; }
+  @media only screen and (min-width: 899.01px) {
+    .az_main-navbar_avatar {
+      height: 100px;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 /*# sourceMappingURL=main.css.map */

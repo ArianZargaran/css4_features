@@ -4,75 +4,90 @@
 @import 'az_layout';
 @import 'az_fonts';
 
-* {box-sizing: border-box;}
+* {box-sizing: border-box; text-decoration: none;}
 
 //border
 @import 'components/az_body.scss';
 
+//navbar
+@import 'components/az_cells.scss';
 
 .az_main-navbar {
   display: grid;
+  width: 80%;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 50px 50px;
   align-items: end;
+  span, h1 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.az_main-navbar_works {
-  grid-column: 3;
-  grid-row: 2;
-  @include MQ(M){
-  grid-column: 1;
-  grid-row: 2;
-  }
+.az_main-navbar_item {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6b6b6b;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
-.az_main-navbar_expertise {
-  grid-column: 4;
-  grid-row: 2;
-  @include MQ(M){
-    grid-column: 2;
-    grid-row: 2;
-    }
-  }
-.az_main-navbar_skills {
-  grid-column: 5;
-  grid-row: 2;
-  @include MQ(M){
-   grid-column: 3;
-   grid-row: 2;
-  }
-}
-.az_main-navbar_avatar  {
-  grid-column: 4;
-  grid-row: 1;
-  @include MQ(M){
-    grid-column: 4;
-    grid-row: span 2;
-    }
-  }
 
-.az_main-navbar_education {
-  grid-column: 3;
-  grid-row: 3;
+.az_main-navbar_item-right {
+  align-self: center;
+  a {
+    height: 100%;
+    width: 100%;
+    &:hover {
+      color: #16a6b6;
+      border-bottom: .5px solid #16a6b6;
+    }
+  }
   @include MQ(M){
-    grid-column: 5;
-    grid-row: 2;
+  align-self: end;
+  justify-self: end;
+  text-align: rigth;
+  border-bottom: .5px solid #6b6b6b;
+  line-height: 40px;
+  padding: 0 10% 0 30%;
   }
 }
-.az_main-navbar_feedback {
-  grid-column: 4;
-  grid-row: 3;
+
+.az_main-navbar_item-left {
   @include MQ(M){
-  grid-column: 6;
-  grid-row: 2;
+    align-self: end;
+    justify-self: end;
+    text-align: left;
+    border-bottom: .5px solid #6b6b6b;
+    line-height: 40px;
+    padding: 0 30% 0 10%;
+    a {
+      height: 100%;
+      width: 100%;
+      &:hover {
+        color: #16a6b6;
+        border-bottom: .5px solid #16a6b6;
+      }
+    }
   }
 }
-.az_main-navbar_contact {
-  grid-column: 5;
-  grid-row: 3;
+
+//LOGO REMAINING
+.az_main-navbar_avatar {
+  align-self: stretch;
+  background: #fff;
+  border-radius: 100%;
+  text-indent: -9999px;
+  border-bottom: .5px solid #6b6b6b;
+  a {
+    height: 100%;
+    width: 100%;
+    &:hover {
+    border-bottom: .5px solid transparent;
+    }
+  }
   @include MQ(M){
-  grid-column: 7;
-  grid-row: 2;
+    height: 100px;
+    align-self: center;
   }
 }

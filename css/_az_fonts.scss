@@ -1,0 +1,34 @@
+@font-face {
+  font-family: NeuzeitGroT_Bold; // <h1>
+  src: url(typos/NeuzeitGroT_Bold.ttf);
+}
+
+@font-face {
+  font-family: sourceSansPro; //<p>
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: sourceSansPro_Italic;
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf);
+}
+
+@font-face {
+  font-family: sourceSansPro_Italic;
+  src: url(typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf);
+}
+
+@font-face {
+  font-family: sourceSansPro_Regular;
+  src: url(typos/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+:root {
+  --typoParagraph: sourceSansPro;
+  --typoHeading: NeuzeitGroT_Bold;
+}
+
+html {
+  font-family: var(--typoParagraph);
+  font-size: 16px;
+}

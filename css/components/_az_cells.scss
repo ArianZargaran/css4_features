@@ -1,0 +1,57 @@
+.az_main-navbar_works {
+  grid-column: 3;
+  grid-row: 2;
+  @include MQ(M){
+  grid-column: 1;
+  grid-row: 2;
+  }
+}
+.az_main-navbar_expertise {
+  grid-column: 4;
+  grid-row: 2;
+  @include MQ(M){
+    grid-column: 2;
+    grid-row: 2;
+    }
+  }
+.az_main-navbar_skills {
+  grid-column: 5;
+  grid-row: 2;
+  @include MQ(M){
+   grid-column: 3;
+   grid-row: 2;
+  }
+}
+.az_main-navbar_avatar  {
+  grid-column: 4;
+  grid-row: 1;
+  @include MQ(M){
+    grid-column: 4;
+    grid-row: span 3;
+    }
+  }
+
+.az_main-navbar_education {
+  grid-column: 3;
+  grid-row: 3;
+  @include MQ(M){
+    grid-column: 5;
+    grid-row: 2;
+  }
+}
+.az_main-navbar_reviews {
+  grid-column: 4;
+  grid-row: 3;
+  @include MQ(M){
+  grid-column: 6;
+  grid-row: 2;
+  }
+}
+.az_main-navbar_contact {
+  grid-column: 5;
+  grid-row: 3;
+  @include MQ(M){
+  grid-column: 7;
+  grid-row: 2;
+  }
+}
