@@ -94,7 +94,7 @@ body {
 
 .az_main-navbar {
   display: grid;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
   grid-template-rows: 100px 50px 50px;
@@ -115,25 +115,25 @@ body {
   color: #6b6b6b;
   line-height: 26px;
   letter-spacing: 1px; }
+  @media only screen and (min-width: 899.01px) {
+    .az_main-navbar_item a:hover {
+      color: #16a6b6; } }
 
 .az_main-navbar_item-right {
   -ms-flex-item-align: center;
       align-self: center; }
-  .az_main-navbar_item-right a {
-    height: 100%;
-    width: 100%; }
-    .az_main-navbar_item-right a:hover {
-      color: #16a6b6;
-      border-bottom: .5px solid #16a6b6; }
   @media only screen and (min-width: 899.01px) {
     .az_main-navbar_item-right {
       -ms-flex-item-align: end;
           align-self: end;
       justify-self: end;
-      text-align: rigth;
-      border-bottom: .5px solid #6b6b6b;
+      text-align: right;
       line-height: 40px;
-      padding: 0 10% 0 30%; } }
+      border-bottom: .5px solid #6b6b6b;
+      padding: 0 10% 0 25%; }
+      .az_main-navbar_item-right:hover {
+        color: #16a6b6;
+        border-bottom: .5px solid #16a6b6; } }
 
 @media only screen and (min-width: 899.01px) {
   .az_main-navbar_item-left {
@@ -143,13 +143,10 @@ body {
     text-align: left;
     border-bottom: .5px solid #6b6b6b;
     line-height: 40px;
-    padding: 0 30% 0 10%; }
-    .az_main-navbar_item-left a {
-      height: 100%;
-      width: 100%; }
-      .az_main-navbar_item-left a:hover {
-        color: #16a6b6;
-        border-bottom: .5px solid #16a6b6; } }
+    padding: 0 25% 0 10%; }
+    .az_main-navbar_item-left:hover {
+      color: #16a6b6;
+      border-bottom: .5px solid #16a6b6; } }
 
 .az_main-navbar_avatar {
   -ms-flex-item-align: stretch;
@@ -157,12 +154,8 @@ body {
   background: #fff;
   border-radius: 100%;
   text-indent: -9999px;
-  border-bottom: .5px solid #6b6b6b; }
-  .az_main-navbar_avatar a {
-    height: 100%;
-    width: 100%; }
-    .az_main-navbar_avatar a:hover {
-      border-bottom: .5px solid transparent; }
+  border-bottom: .5px solid #6b6b6b;
+  cursor: pointer; }
   @media only screen and (min-width: 899.01px) {
     .az_main-navbar_avatar {
       height: 100px;

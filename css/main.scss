@@ -14,7 +14,7 @@
 
 .az_main-navbar {
   display: grid;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
   grid-template-rows: 100px 50px 50px;
@@ -31,25 +31,28 @@
   color: #6b6b6b;
   line-height: 26px;
   letter-spacing: 1px;
+  @include MQ(M){
+    a {
+      &:hover {
+        color: #16a6b6;
+      }
+    }
+  }
 }
 
 .az_main-navbar_item-right {
   align-self: center;
-  a {
-    height: 100%;
-    width: 100%;
+  @include MQ(M){
+  align-self: end;
+  justify-self: end;
+  text-align: right;
+  line-height: 40px;
+  border-bottom: .5px solid #6b6b6b;
+  padding: 0 10% 0 25%;
     &:hover {
       color: #16a6b6;
       border-bottom: .5px solid #16a6b6;
     }
-  }
-  @include MQ(M){
-  align-self: end;
-  justify-self: end;
-  text-align: rigth;
-  border-bottom: .5px solid #6b6b6b;
-  line-height: 40px;
-  padding: 0 10% 0 30%;
   }
 }
 
@@ -60,14 +63,10 @@
     text-align: left;
     border-bottom: .5px solid #6b6b6b;
     line-height: 40px;
-    padding: 0 30% 0 10%;
-    a {
-      height: 100%;
-      width: 100%;
-      &:hover {
-        color: #16a6b6;
-        border-bottom: .5px solid #16a6b6;
-      }
+    padding: 0 25% 0 10%;
+    &:hover {
+      color: #16a6b6;
+      border-bottom: .5px solid #16a6b6;
     }
   }
 }
@@ -79,13 +78,7 @@
   border-radius: 100%;
   text-indent: -9999px;
   border-bottom: .5px solid #6b6b6b;
-  a {
-    height: 100%;
-    width: 100%;
-    &:hover {
-    border-bottom: .5px solid transparent;
-    }
-  }
+  cursor: pointer;
   @include MQ(M){
     height: 100px;
     align-self: center;
