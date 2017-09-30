@@ -10,19 +10,32 @@
 @import 'components/az_body.scss';
 
 //navbar
-@import 'components/az_cells.scss';
+
 
 .az_main-navbar {
   display: grid;
   width: 90%;
   margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr 100px 1fr 1fr 1fr;
-  grid-template-rows: 100px 50px 50px;
+  grid-template-columns: 1fr 100px 1fr;
   align-items: end;
-  span, h1 {
-    display: flex;
-    justify-content: center;
+  @include MQ(M){
+    grid-template-rows: 100px 50px 50px;
   }
+}
+
+.az_main-navbar_container-left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.az_main-navbar_container-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.az_main-navbar_avatar {
+  display: flex;
+  justify-content: center;
 }
 
 .az_main-navbar_item {
@@ -37,50 +50,5 @@
         color: #16a6b6;
       }
     }
-  }
-}
-
-.az_main-navbar_item-right {
-  align-self: center;
-  @include MQ(M){
-  align-self: end;
-  justify-self: end;
-  text-align: right;
-  line-height: 40px;
-  border-bottom: .5px solid #6b6b6b;
-  padding: 0 10% 0 25%;
-    &:hover {
-      color: #16a6b6;
-      border-bottom: .5px solid #16a6b6;
-    }
-  }
-}
-
-.az_main-navbar_item-left {
-  @include MQ(M){
-    align-self: end;
-    justify-self: end;
-    text-align: left;
-    border-bottom: .5px solid #6b6b6b;
-    line-height: 40px;
-    padding: 0 25% 0 10%;
-    &:hover {
-      color: #16a6b6;
-      border-bottom: .5px solid #16a6b6;
-    }
-  }
-}
-
-//LOGO REMAINING
-.az_main-navbar_avatar {
-  align-self: stretch;
-  background: #fff;
-  border-radius: 100%;
-  text-indent: -9999px;
-  border-bottom: .5px solid #6b6b6b;
-  cursor: pointer;
-  @include MQ(M){
-    height: 100px;
-    align-self: center;
   }
 }
