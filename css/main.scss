@@ -10,32 +10,57 @@
 @import 'components/az_body.scss';
 
 //navbar
-
-
 .az_main-navbar {
   display: grid;
-  width: 90%;
-  margin: 0 auto;
-  grid-template-columns: 1fr 100px 1fr;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px 50px;
   align-items: end;
+  grid-template-areas:
+  "navbar_logo"
+  "navbar_left-wing"
+  "navbar_right-wing"
+  ;
   @include MQ(M){
+    grid-template-columns: 1fr 100px 1fr;
     grid-template-rows: 100px 50px 50px;
+    grid-template-areas:
+    ". . ."
+    "navbar_left-wing navbar_logo navbar_right-wing"
+    ". . ."
+    ;
   }
 }
 
 .az_main-navbar_container-left {
+  grid-area: navbar_left-wing;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  @include MQ(M) {
+    justify-content: space-around;
+  }
 }
 
 .az_main-navbar_container-right {
+  grid-area: navbar_right-wing;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  @include MQ(M) {
+    justify-content: space-around;
+  }
 }
 
 .az_main-navbar_avatar {
+  grid-area: navbar_logo;
   display: flex;
   justify-content: center;
+  border: .5px solid #000;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  border-radius: 100%;
+  background: #fff;
 }
 
 .az_main-navbar_item {
@@ -51,4 +76,12 @@
       }
     }
   }
+}
+
+.az_main-navbar_item-left {
+
+}
+
+.az_main-navbar_item-right {
+
 }

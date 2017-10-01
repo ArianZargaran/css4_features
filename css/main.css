@@ -38,37 +38,62 @@ body {
 
 .az_main-navbar {
   display: grid;
-  width: 90%;
-  margin: 0 auto;
-  grid-template-columns: 1fr 100px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px 50px;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end; }
+          align-items: end;
+  grid-template-areas: "navbar_logo" "navbar_left-wing" "navbar_right-wing"; }
   @media only screen and (min-width: 899.01px) {
     .az_main-navbar {
-      grid-template-rows: 100px 50px 50px; } }
+      grid-template-columns: 1fr 100px 1fr;
+      grid-template-rows: 100px 50px 50px;
+      grid-template-areas: ". . ." "navbar_left-wing navbar_logo navbar_right-wing" ". . ."; } }
 
 .az_main-navbar_container-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.az_main-navbar_container-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.az_main-navbar_avatar {
+  grid-area: navbar_left-wing;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (min-width: 899.01px) {
+    .az_main-navbar_container-left {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+
+.az_main-navbar_container-right {
+  grid-area: navbar_right-wing;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (min-width: 899.01px) {
+    .az_main-navbar_container-right {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+
+.az_main-navbar_avatar {
+  grid-area: navbar_logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: .5px solid #000;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  border-radius: 100%;
+  background: #fff; }
 
 .az_main-navbar_item {
   font-size: 18px;
