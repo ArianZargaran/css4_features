@@ -1,0 +1,43 @@
+.az_navbar_item {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 1px;
+  padding: 0 1px;
+  a {
+    padding: 12px;
+    color: #6b6b6b;
+    &:hover {
+      color: #16a6b6;
+      }
+  }
+  @include MQ(M){
+    margin: 0 5px;
+    padding: 10px 0;
+    a {
+      display: block;
+      padding: 3px;
+      border-bottom: .5px solid #6c6c6c;
+      &:hover {
+        color: #16a6b6;
+        border-bottom: .5px solid #16a6b6;
+      }
+    }
+  }
+}
+
+.az_navbar_item-left {
+  @include MQ(M) {
+  a {
+  padding-right: 30%;
+    }
+  }
+}
+
+.az_navbar_item-right {
+  @include MQ(M) {
+  a {
+  padding-left: 30px;
+    }
+  }
+}

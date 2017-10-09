@@ -1,0 +1,13 @@
+.az_navbar_avatar {
+  grid-area: navbar_logo;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  border-radius: 100%;
+  border-color: 1px solid black;
+  background: url('../images/avatar.png') no-repeat;
+  background-size: contain;
+}

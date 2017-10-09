@@ -1,0 +1,24 @@
+.az_navbar {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 0;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px 50px;
+  align-items: center;
+  grid-template-areas:
+  "navbar_logo"
+  "navbar_left-wing"
+  "navbar_right-wing"
+  ;
+  @include MQ(M){
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-areas:
+    ". . ."
+    "navbar_left-wing navbar_logo navbar_right-wing"
+    ". . ."
+    ;
+  }
+}

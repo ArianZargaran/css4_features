@@ -1,0 +1,17 @@
+.az_navbar_container-left {
+  grid-area: navbar_left-wing;
+  display: flex;
+  justify-content: center;
+  @include MQ(M) {
+    justify-content: space-around;
+  }
+}
+
+.az_navbar_container-right {
+  grid-area: navbar_right-wing;
+  display: flex;
+  justify-content: center;
+  @include MQ(M) {
+    justify-content: space-around;
+  }
+}
