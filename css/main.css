@@ -25,7 +25,8 @@ html {
   font-size: 16px; }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none; }
 
 body {
@@ -40,10 +41,14 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 5px 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 50px 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-areas: "navbar_logo" "navbar_left-wing" "navbar_right-wing"; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar {
@@ -53,24 +58,38 @@ body {
 
 .az_navbar_container-left {
   grid-area: navbar_left-wing;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar_container-left {
-      justify-content: space-around; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .az_navbar_container-right {
   grid-area: navbar_right-wing;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar_container-right {
-      justify-content: space-around; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .az_navbar_avatar {
   grid-area: navbar_logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100px;
   width: 100px;
   margin: 0 auto;
@@ -111,17 +130,65 @@ body {
   .az_navbar_item-right a {
     padding-left: 30px; } }
 
-.short-divider {
+.az_short-divider {
   height: 1px;
   width: 20%;
   margin: 40px auto 10px;
   border-bottom: .2px solid lightgray; }
 
-.heading {
+.az_main-heading {
   font-family: var(--typoHeading);
   font-weight: 900;
   font-size: 60px;
   line-height: 70px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 30px; }
+
+.az_gallery {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+  height: 550px;
+  padding: 20px; }
+
+.az_gallery-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px; }
+
+.first-row {
+  position: absolute;
+  top: 0px; }
+
+.second-row {
+  position: absolute;
+  top: 120px;
+  left: -60px; }
+
+.third-row {
+  position: absolute;
+  top: 240px; }
+
+.forth-row {
+  position: absolute;
+  top: 360px;
+  left: -60px; }
+
+.even:first-child {
+  margin-left: 75px; }
+
+.az_gallery-item {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg") no-repeat;
+  border: 1px solid black;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
 
 /*# sourceMappingURL=main.css.map */

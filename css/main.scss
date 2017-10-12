@@ -15,17 +15,54 @@
 @import 'components/az_navbar_avatar.scss';
 @import 'components/az_navbar_item.scss';
 
-.short-divider {
-  height: 1px;
-  width: 20%;
-  margin: 40px auto 10px;
-  border-bottom: .2px solid lightgray;
+//gallery
+@import 'components/az_divider.scss';
+@import 'components/az_main-heading';
+
+
+.az_gallery {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+  height: 550px;
+  padding: 20px;
 }
 
-.heading {
-  font-family: var(--typoHeading);
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 70px;
-  text-align: center;
+.az_gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.first-row {
+  position: absolute;
+  top: 0px;
+}
+.second-row {
+  position: absolute;
+  top: 120px;
+  left: -60px;
+}
+.third-row {
+  position: absolute;
+  top: 240px;
+}
+.forth-row {
+  position: absolute;
+  top: 360px;
+  left: -60px;
+}
+
+.even:first-child {
+  margin-left: 75px;
+}
+
+.az_gallery-item {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  background: url('https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg') no-repeat;
+  border: 1px solid black;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
