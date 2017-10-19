@@ -30,31 +30,22 @@
     flex-shrink: none;
     flex-wrap: wrap;
     align-items: center;
-    @include MQ(S){
-//here      
+@include MQ(S){
+display: inline;
 max-width: 95%;
-margin: 0 auto;
 background: tomato;
     }
     @include MQ (M) {
-      display: flex;
-      max-width: 100%;
+display: flex;
+clear: both;
     }
   }
   .second-row {
-    // @include MQ(S){
-    // text-align: center;
-    // }
-
     @include MQ(M){
       margin-top: -37px;
     }
   }
   .third-row {
-    // @include MQ(S){
-    //   margin-top: 10px;
-    //   margin-right: 10px;
-    // }
     @include MQ(M){
       margin-top: -37px;
     }
@@ -67,14 +58,24 @@ background: tomato;
   margin: 10px 0;
   background: url('https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg') no-repeat;
   @include MQ(S){
-    height: 250px;
-    width: 250px;
-  }
+    background-size: cover;
+    max-height: conver;
+    max-width: 40%;
+    float: left;
+    margin: 0 5%;
+}
   @include MQ(M){
-    height: 200px;
-    width: 200px;
+    clear: both;
+    height: 194px;
+    width: 194px;
     margin: 0 5px;
     background: url('https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg') no-repeat;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 }
+// 
+// &:after {
+// content: "";
+// clear: both;
+// display: table;
+// }

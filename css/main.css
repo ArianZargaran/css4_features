@@ -137,13 +137,13 @@ body {
     align-items: center; }
     @media only screen and (min-width: 542.01px) {
       .az_gallery .az_gallery-wrapper {
+        display: inline;
         max-width: 95%;
-        margin: 0 auto;
         background: tomato; } }
     @media only screen and (min-width: 899.01px) {
       .az_gallery .az_gallery-wrapper {
         display: flex;
-        max-width: 100%; } }
+        clear: both; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery .second-row {
       margin-top: -37px; } }
@@ -158,12 +158,16 @@ body {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg") no-repeat; }
   @media only screen and (min-width: 542.01px) {
     .az_gallery-item {
-      height: 250px;
-      width: 250px; } }
+      background-size: cover;
+      max-height: conver;
+      max-width: 40%;
+      float: left;
+      margin: 0 5%; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery-item {
-      height: 200px;
-      width: 200px;
+      clear: both;
+      height: 194px;
+      width: 194px;
       margin: 0 5px;
       background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg") no-repeat;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
