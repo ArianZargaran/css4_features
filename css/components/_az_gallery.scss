@@ -1,0 +1,7 @@
+.az_gallery {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  @include MQ(S){width: 85%;}
+  @include MQ(M){width: 100%;}
+  }

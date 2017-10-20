@@ -1,0 +1,16 @@
+.az_gallery_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  align-items: center;
+  @include MQ(S){display: inline;}
+  @include MQ (M) {display: flex;}
+}
+
+.second-row {
+  @include MQ(M){margin-top: -37px;}
+}
+.third-row {
+  @include MQ(M){margin-top: -37px;}
+}
