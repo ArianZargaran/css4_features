@@ -24,6 +24,12 @@
   display: block;
   margin: 0 auto;
   padding: 20px 0;
+  @include MQ(S){
+    width: 85%;
+  @include MQ(M){
+    width: 100%;
+      }
+  }
   .az_gallery-wrapper {
     display: flex;
     justify-content: center;
@@ -32,12 +38,9 @@
     align-items: center;
 @include MQ(S){
 display: inline;
-max-width: 95%;
-background: tomato;
     }
     @include MQ (M) {
 display: flex;
-clear: both;
     }
   }
   .second-row {
@@ -58,14 +61,17 @@ clear: both;
   margin: 10px 0;
   background: url('https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg') no-repeat;
   @include MQ(S){
-    background-size: cover;
-    max-height: conver;
-    max-width: 40%;
+position: relative;
+height: 170px;
+width: 170px;
+padding: 20%;
     float: left;
-    margin: 0 5%;
+    margin: 5px 5%;
 }
   @include MQ(M){
     clear: both;
+    padding: 0;
+    position: static;
     height: 194px;
     width: 194px;
     margin: 0 5px;
@@ -73,9 +79,3 @@ clear: both;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 }
-// 
-// &:after {
-// content: "";
-// clear: both;
-// display: table;
-// }

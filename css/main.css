@@ -129,6 +129,13 @@ body {
   display: block;
   margin: 0 auto;
   padding: 20px 0; }
+  @media only screen and (min-width: 542.01px) {
+    .az_gallery {
+      width: 85%; } }
+  @media only screen and (min-width: 542.01px) and (min-width: 899.01px) {
+    .az_gallery {
+      width: 100%; } }
+
   .az_gallery .az_gallery-wrapper {
     display: flex;
     justify-content: center;
@@ -137,13 +144,10 @@ body {
     align-items: center; }
     @media only screen and (min-width: 542.01px) {
       .az_gallery .az_gallery-wrapper {
-        display: inline;
-        max-width: 95%;
-        background: tomato; } }
+        display: inline; } }
     @media only screen and (min-width: 899.01px) {
       .az_gallery .az_gallery-wrapper {
-        display: flex;
-        clear: both; } }
+        display: flex; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery .second-row {
       margin-top: -37px; } }
@@ -158,14 +162,17 @@ body {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg") no-repeat; }
   @media only screen and (min-width: 542.01px) {
     .az_gallery-item {
-      background-size: cover;
-      max-height: conver;
-      max-width: 40%;
+      position: relative;
+      height: 170px;
+      width: 170px;
+      padding: 20%;
       float: left;
-      margin: 0 5%; } }
+      margin: 5px 5%; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery-item {
       clear: both;
+      padding: 0;
+      position: static;
       height: 194px;
       width: 194px;
       margin: 0 5px;
