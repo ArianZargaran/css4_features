@@ -2,9 +2,40 @@
   height: 300px;
   width: 300px;
   margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-position: center center;
   background-repeat: no-repeat;
-  &:hover{cursor: pointer;}
+  overflow: hidden;
+  &:hover {
+    cursor: pointer;
+  }
+  h2 {
+    position: relative;
+    text-indent: -999px;
+    transition: all .5s ease-in-out;
+    transform: skewX(90deg);
+  }
+  h3 {
+    position: relative;
+    transition: all .5s ease-in-out;
+    text-indent: 999px;
+    transform: skewX(-90deg);
+  }
+  &:hover h2 {
+  color: white;
+  font-size: 30px;
+  text-indent: 0;
+  transform: skewX(0deg);
+  }
+  &:hover h3 {
+  color: white;
+  font-size: 20px;
+  text-indent: 0;
+  transform: skewX(0deg);
+  }
   @include MQ(S){
     position: relative;
     height: 170px;
