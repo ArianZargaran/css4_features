@@ -212,8 +212,7 @@ body {
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
 
 .az_gallery-background1 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ140_large.jpg");
-  transition: all 0.5s; }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ140_large.jpg"); }
   .az_gallery-background1:hover {
     filter: opacity(0.5) drop-shadow(0 0 0 tomato); }
 
