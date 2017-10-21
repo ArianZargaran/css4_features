@@ -116,6 +116,9 @@ body {
   width: 20%;
   margin: 40px auto 10px;
   border-bottom: .2px solid lightgray; }
+  @media only screen and (min-width: 899.01px) {
+    .az_short-divider {
+      border-bottom: .2px solid transparent; } }
 
 .az_main-heading {
   font-family: var(--typoHeading);
@@ -163,6 +166,8 @@ body {
   margin: 10px 0;
   background-position: center center;
   background-repeat: no-repeat; }
+  .az_gallery-item:hover {
+    cursor: pointer; }
   @media only screen and (min-width: 542.01px) {
     .az_gallery-item {
       position: relative;
@@ -182,33 +187,63 @@ body {
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
 
 .az_gallery-background1 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ140_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ140_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background1:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 tomato); }
 
 .az_gallery-background2 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ141_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ141_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background2:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 dodgerBlue); }
 
 .az_gallery-background3 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background3:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 orange); }
 
 .az_gallery-background4 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ143_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ143_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background4:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 black); }
 
 .az_gallery-background5 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ144_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ144_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background5:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 Violet); }
 
 .az_gallery-background6 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ145_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ145_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background6:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 MediumSeaGreen); }
 
 .az_gallery-background7 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ146_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ146_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background7:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 white); }
 
 .az_gallery-background8 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ147_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ147_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background8:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 slateBlue); }
 
 .az_gallery-background9 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ148_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ148_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background9:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 lightgray); }
 
 .az_gallery-background10 {
-  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ149_large.jpg"); }
+  background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ149_large.jpg");
+  transition: all 0.5s; }
+  .az_gallery-background10:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 teal); }
 
 /*# sourceMappingURL=main.css.map */
