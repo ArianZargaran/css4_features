@@ -144,6 +144,12 @@ body {
     .az_gallery {
       width: 100%; } }
 
+@media only screen and (min-width: 542.01px) {
+  .az_gallery:after {
+    content: "";
+    display: table;
+    clear: both; } }
+
 .az_gallery_wrapper {
   display: flex;
   justify-content: center;

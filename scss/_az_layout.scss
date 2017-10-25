@@ -16,3 +16,25 @@ $L:     1182.01px;
    @media only screen and (min-width: $L) { @content; }
   }
 }
+
+
+//*Touchscreen*//
+
+//Pointing devince accuracy and precence Media Queries
+
+$N:     nome;
+$C:     coarse;
+$F:     fine;
+
+//TS: Touchscreen
+@mixin TS($pointer) {
+  @if $pointer == N {
+   @media (pointer: $N) { @content; }
+  }
+  @else if $pointer == C {
+    @media (pointer: $C) { @content; }
+  }
+  @else if $pointer == F {
+    @media (pointer: $F) { @content; }
+  }
+}

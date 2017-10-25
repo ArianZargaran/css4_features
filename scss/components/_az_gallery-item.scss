@@ -1,4 +1,18 @@
 .az_gallery-item {
+  @include TS(N){
+    h2 {
+      color: white;
+      font-size: 30px;
+      text-indent: 0;
+      transform: skewX(0deg);
+      }
+    h3 {
+      color: white;
+      font-size: 20px;
+      text-indent: 0;
+      transform: skewX(0deg);
+      }
+  }
   height: 300px;
   width: 300px;
   margin: 10px 0;

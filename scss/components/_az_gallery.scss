@@ -5,3 +5,11 @@
   @include MQ(S){width: 85%;}
   @include MQ(M){width: 100%;}
   }
+
+  .az_gallery:after {
+    @include MQ(S){
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
