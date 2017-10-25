@@ -2,28 +2,28 @@
   --siteBackground: #F5F5F5; }
 
 @font-face {
-  font-family: NeuzeitGroT_Bold;
-  src: url(../assets/typos/NeuzeitGroT_Bold.ttf); }
+  font-family: "NeuzeitGroT_Bold";
+  src: url("../assets/typos/NeuzeitGroT_Bold.ttf"); }
 
 @font-face {
-  font-family: sourceSansPro;
-  src: url(../assets/typos/source-sans-pro/SourceSansPro-ExtraLight.otf); }
+  font-family: "sourceSansPro";
+  src: url("../assets/typos/source-sans-pro/SourceSansPro-ExtraLight.otf"); }
 
 @font-face {
-  font-family: sourceSansPro_Italic;
-  src: url(../assets/typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf); }
+  font-family: "sourceSansPro_Italic";
+  src: url("../assets/typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf"); }
 
 @font-face {
-  font-family: sourceSansPro_Italic;
-  src: url(../assets/typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf); }
+  font-family: "sourceSansPro_Italic";
+  src: url("../assets/typos/source-sans-pro/SourceSansPro-ExtraLightIt.otf"); }
 
 @font-face {
-  font-family: sourceSansPro_Regular;
-  src: url(../assets/typos/source-sans-pro/SourceSansPro-Regular.otf); }
+  font-family: "sourceSansPro_Regular";
+  src: url("../assets/typos/source-sans-pro/SourceSansPro-Regular.otf"); }
 
 :root {
-  --typoParagraph: sourceSansPro;
-  --typoHeading: NeuzeitGroT_Bold; }
+  --typoParagraph: "sourceSansPro";
+  --typoHeading: "NeuzeitGroT_Bold"; }
 
 html {
   font-family: var(--typoParagraph);
