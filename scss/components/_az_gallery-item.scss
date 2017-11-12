@@ -59,12 +59,12 @@
     margin: 5px 5%;
     }
   @include MQ(M){
-    clear: both;
     padding: 0;
     position: static;
     height: 194px;
     width: 194px;
     margin: 0 5px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
   }

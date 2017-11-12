@@ -30,7 +30,8 @@ html {
   font-size: 16px; }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none; }
 
 body {
@@ -45,10 +46,14 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 5px 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 50px 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-areas: "navbar_logo" "navbar_left-wing" "navbar_right-wing"; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar {
@@ -58,24 +63,38 @@ body {
 
 .az_navbar_container-left {
   grid-area: navbar_left-wing;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar_container-left {
-      justify-content: space-around; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .az_navbar_container-right {
   grid-area: navbar_right-wing;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media only screen and (min-width: 899.01px) {
     .az_navbar_container-right {
-      justify-content: space-around; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .az_navbar_avatar {
   grid-area: navbar_logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100px;
   width: 100px;
   margin: 0 auto;
@@ -151,16 +170,26 @@ body {
     clear: both; } }
 
 .az_gallery_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-shrink: none;
-  flex-wrap: wrap;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: none;
+      flex-shrink: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media only screen and (min-width: 542.01px) {
     .az_gallery_wrapper {
       display: inline; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery_wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
 
 @media only screen and (min-width: 899.01px) {
@@ -175,10 +204,19 @@ body {
   height: 300px;
   width: 300px;
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden; }
@@ -187,34 +225,50 @@ body {
       color: white;
       font-size: 30px;
       text-indent: 0;
-      transform: skewX(0deg); }
+      -webkit-transform: skewX(0deg);
+          -ms-transform: skewX(0deg);
+              transform: skewX(0deg); }
     .az_gallery-item h3 {
       color: white;
       font-size: 20px;
       text-indent: 0;
-      transform: skewX(0deg); } }
+      -webkit-transform: skewX(0deg);
+          -ms-transform: skewX(0deg);
+              transform: skewX(0deg); } }
   .az_gallery-item:hover {
     cursor: pointer; }
   .az_gallery-item h2 {
     position: relative;
     text-indent: -999px;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    transform: skewX(90deg); }
+    -webkit-transform: skewX(90deg);
+        -ms-transform: skewX(90deg);
+            transform: skewX(90deg); }
   .az_gallery-item h3 {
     position: relative;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     text-indent: 999px;
-    transform: skewX(-90deg); }
+    -webkit-transform: skewX(-90deg);
+        -ms-transform: skewX(-90deg);
+            transform: skewX(-90deg); }
   .az_gallery-item:hover h2 {
     color: white;
     font-size: 30px;
     text-indent: 0;
-    transform: skewX(0deg); }
+    -webkit-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+            transform: skewX(0deg); }
   .az_gallery-item:hover h3 {
     color: white;
     font-size: 20px;
     text-indent: 0;
-    transform: skewX(0deg); }
+    -webkit-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+            transform: skewX(0deg); }
   @media only screen and (min-width: 542.01px) {
     .az_gallery-item {
       position: relative;
@@ -225,60 +279,70 @@ body {
       margin: 5px 5%; } }
   @media only screen and (min-width: 899.01px) {
     .az_gallery-item {
-      clear: both;
       padding: 0;
       position: static;
       height: 194px;
       width: 194px;
       margin: 0 5px;
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
 
 .az_gallery-background1 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ140_large.jpg"); }
   .az_gallery-background1:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 tomato); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 tomato);
+            filter: opacity(0.5) drop-shadow(0 0 0 tomato); }
 
 .az_gallery-background2 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ141_large.jpg"); }
   .az_gallery-background2:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 dodgerBlue); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 dodgerBlue);
+            filter: opacity(0.5) drop-shadow(0 0 0 dodgerBlue); }
 
 .az_gallery-background3 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ142_large.jpg"); }
   .az_gallery-background3:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 orange); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 orange);
+            filter: opacity(0.5) drop-shadow(0 0 0 orange); }
 
 .az_gallery-background4 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ143_large.jpg"); }
   .az_gallery-background4:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 black); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 black);
+            filter: opacity(0.5) drop-shadow(0 0 0 black); }
 
 .az_gallery-background5 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ144_large.jpg"); }
   .az_gallery-background5:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 Violet); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 Violet);
+            filter: opacity(0.5) drop-shadow(0 0 0 Violet); }
 
 .az_gallery-background6 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ145_large.jpg"); }
   .az_gallery-background6:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 MediumSeaGreen); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 MediumSeaGreen);
+            filter: opacity(0.5) drop-shadow(0 0 0 MediumSeaGreen); }
 
 .az_gallery-background7 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ146_large.jpg"); }
   .az_gallery-background7:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 white); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
+            filter: opacity(0.5) drop-shadow(0 0 0 white); }
 
 .az_gallery-background8 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ147_large.jpg"); }
   .az_gallery-background8:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 slateBlue); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 slateBlue);
+            filter: opacity(0.5) drop-shadow(0 0 0 slateBlue); }
 
 .az_gallery-background9 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ148_large.jpg"); }
   .az_gallery-background9:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 lightgray); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 lightgray);
+            filter: opacity(0.5) drop-shadow(0 0 0 lightgray); }
 
 .az_gallery-background10 {
   background: url("https://cdn.shopify.com/s/files/1/1239/9388/products/liksquared_element_SQ149_large.jpg"); }
   .az_gallery-background10:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 teal); }
+    -webkit-filter: opacity(0.5) drop-shadow(0 0 0 teal);
+            filter: opacity(0.5) drop-shadow(0 0 0 teal); }
