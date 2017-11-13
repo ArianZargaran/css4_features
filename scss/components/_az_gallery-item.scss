@@ -29,12 +29,12 @@
   h2 {
     position: relative;
     text-indent: -999px;
-    transition: all .5s ease-in-out;
+    transition: text-indent .5s ease-in-out;
     transform: skewX(90deg);
   }
   h3 {
     position: relative;
-    transition: all .5s ease-in-out;
+    transition: text-indent .5s ease-in-out;
     text-indent: 999px;
     transform: skewX(-90deg);
   }
