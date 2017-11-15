@@ -27,28 +27,28 @@
     cursor: pointer;
   }
   h2 {
+    color: white;
+    font-size: 1px;
     position: relative;
     text-indent: -999px;
-    transition: text-indent .5s ease-in-out;
-    transform: skewX(90deg);
+    transition: text-indent .5s ease-in-out, font-size .3s ease-in-out;
   }
   h3 {
+    color: white;
+    font-size: 1px;
     position: relative;
-    transition: text-indent .5s ease-in-out;
-    text-indent: 999px;
-    transform: skewX(-90deg);
+    text-indent: 999px;   
+    transition: text-indent .5s ease-in-out, font-size .3s ease-in-out;
   }
   &:hover h2 {
-  color: white;
-  font-size: 30px;
   text-indent: 0;
-  transform: skewX(0deg);
+  font-size: 30px;
+  transition: text-indent .5s ease-in-out, font-size .3s ease-in-out;
   }
   &:hover h3 {
-  color: white;
-  font-size: 20px;
   text-indent: 0;
-  transform: skewX(0deg);
+  font-size: 20px;
+  transition: text-indent .5s ease-in-out, font-size .3s ease-in-out;
   }
   @include MQ(S){
     position: relative;

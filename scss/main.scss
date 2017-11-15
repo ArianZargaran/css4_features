@@ -1,26 +1,26 @@
 @charset "UTF-8";
 
-@import 'scss/az_colors.scss';
-@import 'scss/az_layout.scss';
-@import 'scss/az_fonts.scss';
+@import 'az_colors.scss';
+@import 'az_layout.scss';
+@import 'az_fonts.scss';
 
 * {box-sizing: border-box; text-decoration: none;}
 
 //border
-@import 'scss/components/az_body.scss';
+@import 'components/az_body.scss';
 
 //navbar
-@import 'scss/components/az_navbar.scss';
-@import 'scss/components/az_navbar_containers.scss';
-@import 'scss/components/az_navbar_avatar.scss';
-@import 'scss/components/az_navbar_item.scss';
+@import 'components/az_navbar.scss';
+@import 'components/az_navbar_containers.scss';
+@import 'components/az_navbar_avatar.scss';
+@import 'components/az_navbar_item.scss';
 
 //main header & divider
-@import 'scss/components/az_divider.scss';
-@import 'scss/components/az_main-heading.scss';
+@import 'components/az_divider.scss';
+@import 'components/az_main-heading.scss';
 
 //gallery
-@import 'scss/components/az_gallery.scss';
-@import 'scss/components/az_gallery_wrapper.scss';
-@import 'scss/components/az_gallery-item.scss';
-@import 'scss/components/az_gallery-backgrounds.scss';
+@import 'components/az_gallery.scss';
+@import 'components/az_gallery_wrapper.scss';
+@import 'components/az_gallery-item.scss';
+@import 'components/az_gallery-backgrounds.scss';
