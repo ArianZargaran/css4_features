@@ -26,7 +26,7 @@
   }
 }
 
-.az_navbar_item-left {
+.az_navbar_item_left {
   @include MQ(M) {
   a {
   padding-right: 30%;
@@ -34,7 +34,7 @@
   }
 }
 
-.az_navbar_item-right {
+.az_navbar_item_right {
   @include MQ(M) {
   a {
   padding-left: 30px;

@@ -8,9 +8,9 @@
   @include MQ (M) {display: flex;}
 }
 
-.second-row {
+.az_gallery_second_row {
   @include MQ(M){margin-top: -37px;}
 }
-.third-row {
+.az_gallery_third_row {
   @include MQ(M){margin-top: -37px;}
 }
