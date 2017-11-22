@@ -171,7 +171,7 @@ body {
   .third-row {
     margin-top: -37px; } }
 
-.az_gallery-item {
+.az_gallery_item {
   height: 300px;
   width: 300px;
   margin: 10px 0;
@@ -183,40 +183,40 @@ body {
   background-repeat: no-repeat;
   overflow: hidden; }
   @media (pointer: nome) {
-    .az_gallery-item h2 {
+    .az_gallery_item h2 {
       color: white;
       font-size: 30px;
       text-indent: 0;
       transform: skewX(0deg); }
-    .az_gallery-item h3 {
+    .az_gallery_item h3 {
       color: white;
       font-size: 20px;
       text-indent: 0;
       transform: skewX(0deg); } }
-  .az_gallery-item:hover {
+  .az_gallery_item:hover {
     cursor: pointer; }
-  .az_gallery-item h2 {
+  .az_gallery_item h2 {
     color: white;
     font-size: 1px;
     position: relative;
     text-indent: -999px;
     transition: text-indent .5s ease-in-out, font-size .3s ease-in-out; }
-  .az_gallery-item h3 {
+  .az_gallery_item h3 {
     color: white;
     font-size: 1px;
     position: relative;
     text-indent: 999px;
     transition: text-indent .5s ease-in-out, font-size .3s ease-in-out; }
-  .az_gallery-item:hover h2 {
+  .az_gallery_item:hover h2 {
     text-indent: 0;
     font-size: 30px;
     transition: text-indent .5s ease-in-out, font-size .3s ease-in-out; }
-  .az_gallery-item:hover h3 {
+  .az_gallery_item:hover h3 {
     text-indent: 0;
     font-size: 20px;
     transition: text-indent .5s ease-in-out, font-size .3s ease-in-out; }
   @media only screen and (min-width: 542.01px) {
-    .az_gallery-item {
+    .az_gallery_item {
       position: relative;
       height: 170px;
       width: 170px;
@@ -224,7 +224,7 @@ body {
       float: left;
       margin: 5px 5%; } }
   @media only screen and (min-width: 899.01px) {
-    .az_gallery-item {
+    .az_gallery_item {
       padding: 0;
       position: static;
       height: 194px;
